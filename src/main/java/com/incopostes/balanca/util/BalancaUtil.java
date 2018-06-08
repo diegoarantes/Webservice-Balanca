@@ -16,7 +16,7 @@ public class BalancaUtil {
 
 		try {
 			System.out.println("Port opened: " + serialPort.openPort());
-			System.out.println("Params setted: " + serialPort.setParams(9600, 8, 2, 0));
+			System.out.println("Params setted: " + serialPort.setParams(9600, 8, 1, 0));
 			System.out.println("successfully writen to port: " + serialPort.writeBytes(new byte[] { 0x04 }));
 
 			byte[] buffer = serialPort.readBytes(11); // Read 11 bytes from serial port
